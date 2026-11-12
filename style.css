@@ -1,0 +1,352 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #F1F9FF;
+    color: #102C4A;
+}
+
+header {
+    min-height: 58px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(
+        rgba(5, 25, 48, 0.75),
+        rgba(5, 25, 48, 0.75)
+    ), url("photo.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+header h2 {
+    color: #A9D8FF;
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #A9D8FF;
+}
+
+.hero {
+    flex: 1;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 50px 8%;
+    background: linear-gradient(
+        rgba(10, 35, 65, 0.75),
+        rgba(10, 35, 65, 0.75)
+    ), url("photo.PNG");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero h4 {
+    color: #A9D8FF;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #A9D8FF;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #102C4A;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #A9D8FF;
+    transform: translateY(-3px);
+}
+
+.explore {
+    display: inline-block;
+    color: white;
+    background-color: #287BA8;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.explore:hover {
+    background-color: #A9D8FF;
+    color: #102C4A;
+}
+
+.about,
+#skills,
+.projects,
+.contact {
+    flex: 1;
+    background: linear-gradient(
+        rgba(10, 30, 55, 0.78),
+        rgba(10, 30, 55, 0.78)
+    ), url("background.PNG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 5%;
+    color: white;
+}
+
+.about h2,
+#skills h2,
+.projects h2,
+.contact h2 {
+    color: #A9D8FF;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.about-intro {
+    flex: 1;
+    padding: 15px;
+    border-right: 2px solid #A9D8FF;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.about-details {
+    flex: 1;
+    padding: 15px;
+    font-size: 17px;
+    line-height: 2.2;
+}
+
+.about-details p {
+    margin-bottom: 5px;
+}
+
+.skills-container,
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    color: #102C4A;
+    padding: 25px 15px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card {
+    background-color: white;
+    color: #102C4A;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    line-height: 1.5;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    border-right: 2px solid #A9D8FF;
+    padding: 15px;
+    line-height: 2;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #A9D8FF;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #A9D8FF;
+    color: #102C4A;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: white;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #102C4A;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-container,
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .about-intro,
+    .contact-info {
+        border-right: none;
+        border-bottom: 2px solid #A9D8FF;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 280px;
+    }
+}
